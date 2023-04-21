@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 /* eslint-disable indent */
-import cors from 'cors';
-import express from 'express';
-import categoriesData from './data/categories.json' assert { type: "json" };
-import newsData from './data/news.json' assert { type: "json" };
+const cors = require('cors');
+const express =  require('express');
+const categoriesData = require('./data/categories.json') 
+const newsData = require('./data/news.json')
 const app = express();
 app.use(cors())
 app.get('/', (req, res) => {
